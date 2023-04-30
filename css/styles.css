@@ -16,7 +16,7 @@
 }
 
 html {
-    font-size: 65.5%;
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -78,8 +78,7 @@ header .navbar ul li a:hover {
 }
 
 header .logo {
-    font-size: 2.5rem ;
-    
+    font-size: 2.5rem ;    
 }
 
 header .fa-bars {
@@ -91,7 +90,7 @@ header .fa-bars {
 }
 
 .home {
-    min-height: 70vh;
+    min-height: 50vh;
     background-image: url(../images/eimec-formacion-medicina-estetica-taller-bioestimulacion-facial.jpg);
     background-size: cover;
     background-position: center;
@@ -106,12 +105,12 @@ header .fa-bars {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding-top: 45rem;
+    padding-top: 25rem;
     text-align: center;
 }
 
 .home .content h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #fff;
     padding: 0 1rem;
     text-shadow: 0. 3rem .5rem rgba(0, 0, 0, .3);
@@ -122,13 +121,12 @@ header .fa-bars {
     font-size: 2rem;
     color:black;
     padding: 1rem 25rem;
-    text-transform: uppercase ;
 }
 
 .home .content button {
     height: 5rem;
     width: 20rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background: #f9580e;
     color: #fff;
     font-size: 1.5rem;
@@ -163,7 +161,7 @@ header .fa-bars {
     width: 25rem;
     background: #171717;
     text-align: center;
-    border-radius: 3rem;
+    border-radius: 1rem;
     box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .6);
     margin: 3rem;
     cursor: pointer;
