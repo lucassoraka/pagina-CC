@@ -37,6 +37,9 @@ body {
     background-color: rgba(77, 77, 77, 0.568);
     padding: 0px 10%;
     display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
 
     z-index: 1000;
 
@@ -115,14 +118,6 @@ body {
     font-weight: 400;
     color: #fff;
 }
-
-
-
-
-
-
-
-
 
 .home {
     min-height: 50vh;
@@ -495,6 +490,37 @@ textarea:focus {
     justify-content: center;
     align-items: center;
 }
+
+.header-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img {
+    text-align: center;
+    justify-content: center;
+}
+
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h3 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    
+}
+
+
+
+
+
+
 
 
 
