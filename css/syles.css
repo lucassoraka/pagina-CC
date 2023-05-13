@@ -535,6 +535,9 @@ h2 {
 
 .products img {
     width: 500px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    max-width: 300px;
 
 }
 
