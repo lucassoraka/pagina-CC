@@ -500,7 +500,11 @@ textarea:focus {
 
 .header-img {
     text-align: center;
-    justify-content: center;
+    width: 900px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    
+
 }
 
 
@@ -531,6 +535,7 @@ h2 {
 
 .products img {
     width: 500px;
+
 }
 
 .products h3 {
