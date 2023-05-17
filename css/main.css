@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap");
+/*base*/
+* {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: inherit;
+}
+
+*::selection {
+  background: #f9580e;
+  color: #fff;
+}
+
+body {
+  background-color: #000000;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/*utilities*/
+/* variables menu */
+/*footer*/
+/*components*/
+.whatsapp {
+  width: 110px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+}
+
+.product {
+  text-align: center;
+  margin: 100px 0;
+}
+.product .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.product .box-container .box {
+  height: 25rem;
+  width: 25rem;
+  background: #171717;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.6);
+  margin: 3rem;
+  cursor: pointer;
+}
+.product .box-container .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #000000;
+  background: rgb(255, 255, 255);
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  transition: 0.2s;
+}
+.product .box-container .box h3 {
+  font-size: 2rem;
+  color: #f9580e;
+  transition: 0.2s;
+}
+.product .box-container .box p {
+  font-size: 1.3rem;
+  padding: 0.7rem 2rem;
+  color: #fff;
+}
+.product .box-container .box:hover i {
+  background: #f9580e;
+}
+.product .box-container .box:hover h3 {
+  color: whitesmoke;
+}
+.product button {
+  height: 5rem;
+  width: 20rem;
+  border-radius: 2rem;
+  background: #f9580e;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  box-shadow: 0 0.3rem 1rem rgba(58, 57, 58, 0.3);
+}
+.product button:hover {
+  background: none;
+  border: 0.2rem solid #f9580e;
+}
+
+/*layout*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(77, 77, 77, 0.568);
+  padding: 0px 10%;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1000;
+}
+
+.menu {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9529411765);
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+}
+.menu .navbar ul li a {
+  font-size: 19px;
+  padding: 22px;
+  color: #f9580e;
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+}
+.menu .navbar ul li a:hover {
+  color: #ffffff;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+  background-color: #f9580e;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) and (max-width: 991px) {
+  .menu {
+    padding: 20px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f;
+    display: none;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+  .header {
+    min-height: 0vh;
+  }
+  .header-content {
+    flex-direction: column;
+    padding: 100px 30px 30px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .home .content p {
+    padding: 1.5rem 2rem;
+  }
+  .about .row {
+    flex-direction: column-reverse;
+  }
+  .about .row .image img {
+    height: 30vh;
+    width: 90vw;
+  }
+  .about .row .content {
+    padding: 0 2.5rem;
+  }
+  .course .box-container {
+    width: 100%;
+  }
+  .contact .row {
+    flex-flow: column;
+  }
+  .contact .row .form-container {
+    width: 90%;
+    padding: 0;
+  }
+}
+.footer {
+  text-align: center;
+}
+.footer .icons {
+  padding: 3rem 0;
+}
+.footer .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.2rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #d6b10d;
+  border: 0.2rem solid #ffc246;
+  font-size: 2rem;
+  margin: 0 0.1rem;
+  transition: 0.2s linear;
+}
+.footer .icons a:hover {
+  color: #fff;
+  background: #f9580e;
+  border-color: #f9580e;
+}
+
+.home {
+  min-height: 50vh;
+  background-image: url(../images/eimec-formacion-medicina-estetica-taller-bioestimulacion-facial.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+.home .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 40rem;
+  text-align: center;
+}
+.home .content h1 {
+  font-size: 5rem;
+  color: #fff;
+  padding: 0 1rem;
+  text-transform: uppercase;
+}
+.home .content p {
+  font-size: 2rem;
+  color: black;
+  padding: 1rem 25rem;
+}
+.home .content button {
+  height: 5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background: #f9580e;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  margin: 4rem 0;
+  border-color: #f9580e;
+  margin-top: 2rem;
+  border-color: #f9580e;
+}
+.home .content button:hover {
+  background: none;
+  border: 0.2rem solid #fff;
+}
+
+/*views*/
+.contain {
+  background-color: rgba(58, 57, 58, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.contain .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contain .fa-dollar-sign {
+  color: #0066ff;
+  margin-right: 5px;
+  font-size: 3rem;
+  text-align: center;
+}
+.contain p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.contain button {
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.contain button:hover {
+  background-color: #0047b3;
+}
+
+.course .box-container {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+  flex-wrap: wrap;
+}
+.course .box-container .box {
+  background: #171717;
+  height: 25rem;
+  width: 25rem;
+  margin: 3.5rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.course .box-container .box i {
+  height: 10rem;
+  width: 10rem;
+  line-height: 8rem;
+  text-align: center;
+  color: #ffffff;
+  background: none;
+  margin-top: 3rem;
+  font-size: 5rem;
+}
+.course .box-container .box h3 {
+  font-size: 2rem;
+  color: #f9580e;
+  cursor: pointer;
+}
+.course .box-container .box p {
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+}
+
+.review {
+  background: #171717;
+}
+.review .box-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  flex-wrap: wrap;
+}
+.review .box-container .box {
+  width: 28rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.6);
+  background-color: #0c0b0b;
+  margin: 4rem 2rem;
+}
+.review .box-container .box img {
+  height: 15rem;
+  width: 11rem;
+  object-fit: cover;
+  border-radius: 30%;
+  margin-top: -5rem;
+}
+.review .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #f9580e;
+  padding: 0 0.5rem;
+}
+.review .box-container .box p {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1.3rem 0.1rem;
+}
+.review .box-container .box .stars i {
+  font-size: 1.8rem;
+  color: #ffc246;
+  padding: 1rem 0.4rem;
+}
+
+.footer {
+  text-align: center;
+}
+.footer .icons {
+  padding: 3rem 0;
+}
+.footer .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.2rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #d6b10d;
+  border: 0.2rem solid #ffc246;
+  font-size: 2rem;
+  margin: 0 0.1rem;
+  transition: 0.2s linear;
+}
+.footer .icons a:hover {
+  color: #fff;
+  background: #f9580e;
+  border-color: #f9580e;
+}
+
+.about h1 {
+  color: #0066ff;
+}
+
+.whatsapp {
+  width: 110px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+}
+
+.mapa {
+  filter: grayscale(100%) invert(92%) contrast(93%);
+  margin-top: 25px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-img {
+  text-align: center;
+  width: 900px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}
+
+.products {
+  padding: 70px 0 0 0;
+  text-align: center;
+}
+.products h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.products img {
+  width: 500px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  max-width: 300px;
+}
+.products h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.products p {
+  font-size: 16px;
+  color: #f9580e;
+  margin-bottom: 10px;
+}
+.products .precio {
+  color: #fff !important;
+}
+.products .btn-2 {
+  display: inline-block;
+  padding: 8px 17px;
+  border: 1px solid #f9580e;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.products .btn-2:hover {
+  background-color: #f9580e;
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  text-align: center;
+}
+.contact .row .form-container {
+  width: 50%;
+  padding-right: 6rem;
+}
+.contact .row .form-container input,
+.contact .row .form-container textarea {
+  height: 4rem;
+  width: 100%;
+  background: #fff;
+  border-radius: 5rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  color: #f9580e;
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+}
+.contact .row .form-container input:focus,
+.contact .row .form-container textarea:focus {
+  border: 0.4rem solid #f9580e;
+}
+.contact .row .form-container textarea {
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+.contact .row .form-container input[type=submit] {
+  height: 5rem;
+  width: 17rem;
+  background: #f9580e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+.contact .row .form-container input[type=submit]:hover {
+  background: none;
+  color: #f9580e;
+  border: 0.2rem solid #f9580e;
+}
+
+.container p {
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

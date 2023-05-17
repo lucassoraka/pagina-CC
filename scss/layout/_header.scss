@@ -1,0 +1,142 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(77, 77, 77, 0.568);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1000;
+
+}
+
+.menu {
+    position: absolute;
+    background-color: $menu-bg-color;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+  
+    .navbar {
+      ul {
+        li {
+          position: relative;
+          float: left;
+          list-style: none;
+  
+          a {
+            font-size: $menu-link-font-size;
+            padding: $menu-link-padding;
+            color: $menu-link-color;
+            display: block;
+            font-weight: 500;
+            text-decoration: none;
+  
+            &:hover {
+              color: $menu-link-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+   #menu {
+    display: none;
+
+}
+
+.menu-icono {
+    width: 25px;
+    background-color: #f9580e;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  @media (max-width:991px) {
+
+      .menu {
+          padding: 20px
+      }
+
+      .menu label {
+          display: initial;
+      }
+
+
+
+      .menu .navbar {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: #1f1f1f;
+          display: none;
+      }
+
+      .menu .navbar ul li {
+          width: 100%;
+      }
+
+      #menu:checked~.navbar {
+          display: initial;
+      }
+
+      .header {
+          min-height: 0vh;
+
+      }
+
+      .header-content {
+          flex-direction: column;
+          padding: 100px 30px 30px 30px;
+
+      }
+
+  }
+
+  .home .content p {
+      padding: 1.5rem 2rem;
+  }
+
+  .about .row {
+      flex-direction: column-reverse;
+  }
+
+  .about .row .image img {
+      height: 30vh;
+      width: 90vw;
+  }
+
+  .about .row .content {
+      padding: 0 2.5rem;
+  }
+
+  .course .box-container {
+      width: 100%;
+  }
+
+  .contact .row {
+      flex-flow: column;
+  }
+
+  .contact .row .form-container {
+      width: 90%;
+      padding: 0;
+  }
+
+}

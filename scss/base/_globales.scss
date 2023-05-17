@@ -1,0 +1,27 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    box-sizing: inherit;
+}
+
+*::selection {
+    background: #f9580e;
+    color: #fff;
+
+}
+
+body {
+    background-color: #000000;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+

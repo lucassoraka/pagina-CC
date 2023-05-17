@@ -1,0 +1,26 @@
+.footer {
+    text-align: center;
+  
+    .icons {
+      padding: 3rem 0;
+  
+      a {
+        height: $footer-icon-size;
+        width: $footer-icon-size;
+        line-height: 4.2rem;
+        text-align: center;
+        border-radius: 50%;
+        color: $footer-icon-color;
+        border: .2rem solid $footer-icon-border-color;
+        font-size: 2rem;
+        margin: 0 .1rem;
+        transition: .2s linear;
+  
+        &:hover {
+          color: $footer-icon-hover-color;
+          background: $footer-icon-bg-hover-color;
+          border-color: $footer-icon-border-hover-color;
+        }
+      }
+    }
+  }
