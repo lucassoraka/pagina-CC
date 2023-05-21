@@ -1,82 +1,185 @@
 .whatsapp {
-    width: 110px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    text-align: center;
+  width: 110px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
 }
 
 .product {
-    text-align: center;
-    margin: 100px 0;
+  text-align: center;
+  margin: 100px 0;
 
-  
-    .box-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .box {
+      height: 25rem;
+      width: 25rem;
+      background: #171717;
       text-align: center;
-  
-      .box {
-        height: 25rem;
-        width: 25rem;
-        background: #171717;
+      border-radius: 1rem;
+      box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .6);
+      margin: 3rem;
+      cursor: pointer;
+
+      i {
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
         text-align: center;
-        border-radius: 1rem;
-        box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .6);
-        margin: 3rem;
-        cursor: pointer;
-  
+        border-radius: 50%;
+        color: #000000;
+        background: rgb(255, 255, 255);
+        font-size: 3.5rem;
+        margin: 2rem 0;
+        transition: .2s;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: #f9580e;
+        transition: .2s;
+      }
+
+      p {
+        font-size: 1.3rem;
+        padding: .7rem 2rem;
+        color: #fff;
+      }
+
+      &:hover {
         i {
-          height: 6rem;
-          width: 6rem;
-          line-height: 6rem;
-          text-align: center;
-          border-radius: 50%;
-          color: #000000;
-          background: rgb(255, 255, 255);
-          font-size: 3.5rem;
-          margin: 2rem 0;
-          transition: .2s;
+          background: #f9580e;
         }
-  
+
         h3 {
-          font-size: 2rem;
-          color: #f9580e;
-          transition: .2s;
-        }
-  
-        p {
-          font-size: 1.3rem;
-          padding: .7rem 2rem;
-          color: #fff;
-        }
-  
-        &:hover {
-          i {
-            background: #f9580e;
-          }
-  
-          h3 {
-            color: whitesmoke;
-          }
+          color: whitesmoke;
         }
       }
     }
+  }
+
+  button {
+    height: 5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    background: #f9580e;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: .2s;
+    box-shadow: 0 .3rem 1rem rgba(58, 57, 58, 0.3);
+
+    &:hover {
+      background: none;
+      border: .2rem solid #f9580e;
+    }
+  }
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.clienes.contenedor {
+  text-align: center;
+  font-size: 100px;
   
-    button {
-      height: 5rem;
-      width: 20rem;
-      border-radius: 2rem;
-      background: #f9580e;
-      color: #fff;
-      font-size: 1.5rem;
-      transition: .2s;
-      box-shadow: 0 .3rem 1rem rgba(58, 57, 58, 0.3);
-    
-      &:hover {
-        background: none;
-        border: .2rem solid #f9580e;
-      }
-    } 
-}     
+}
+
+
+.titulo {
+  color: #fff;
+  font-size: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+  margin: 8px;
+  transition: 2s;
+  background: #171717;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.contenido-texto-card {
+  text-align: center;
+  max-width: 100%; /* Ajusta este valor según tus necesidades */
+  overflow:hidden;
+font-size: 20px;
+  
+}
+
+
+
+i{
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+i:hover {
+  background: #f9580e;
+  border-radius: 10px;
+  
+}
+
+
+
+.contenido-texto-card h4 {
+  width: 100%;
+  color: #f9580e;
+
+}
+
+.contenido-texto-card p {
+  font-weight: 400;
+  padding-top: 20px;
+  margin: 0 15px 0 15px;
+}
+
+@media only screen and (max-width: 833px) {
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .card {
+      width: 70%;
+  }
+
+  .cards .card img {
+      max-width: 40%;
+      height: auto;
+  }
+
+
+}

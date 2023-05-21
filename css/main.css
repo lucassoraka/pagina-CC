@@ -1,8 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap");
 /*base*/
 * {
   font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
   text-decoration: none;
   outline: none;
   margin: 0;
@@ -11,6 +11,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: inherit;
+  font-size: 70%;
 }
 
 *::selection {
@@ -99,6 +100,90 @@ body {
   border: 0.2rem solid #f9580e;
 }
 
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.clienes.contenedor {
+  text-align: center;
+  font-size: 100px;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+  margin: 8px;
+  transition: 2s;
+  background: #171717;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.contenido-texto-card {
+  text-align: center;
+  max-width: 100%; /* Ajusta este valor según tus necesidades */
+  overflow: hidden;
+  font-size: 20px;
+}
+
+i {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+i:hover {
+  background: #f9580e;
+  border-radius: 10px;
+}
+
+.contenido-texto-card h4 {
+  width: 100%;
+  color: #f9580e;
+}
+
+.contenido-texto-card p {
+  font-weight: 400;
+  padding-top: 20px;
+  margin: 0 15px 0 15px;
+}
+
+@media only screen and (max-width: 833px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 70%;
+  }
+  .cards .card img {
+    max-width: 40%;
+    height: auto;
+  }
+}
 /*layout*/
 .header {
   position: fixed;
@@ -235,6 +320,23 @@ body {
   border-color: #f9580e;
 }
 
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.final p {
+  margin: 0;
+}
+
+@media (max-width: 490px) {
+  .final {
+    flex-direction: column;
+  }
+}
 .home {
   min-height: 50vh;
   background-image: url(../images/eimec-formacion-medicina-estetica-taller-bioestimulacion-facial.jpg);
@@ -261,8 +363,9 @@ body {
 }
 .home .content p {
   font-size: 2rem;
-  color: black;
+  color: #E44996;
   padding: 1rem 25rem;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.89);
 }
 .home .content button {
   height: 5rem;
@@ -284,12 +387,17 @@ body {
   border: 0.2rem solid #fff;
 }
 
+.equipo1 {
+  color: #fff;
+}
+
 /*views*/
 .contain {
   background-color: rgba(58, 57, 58, 0.3);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  color: #fff;
 }
 .contain .title {
   font-size: 24px;
@@ -316,7 +424,17 @@ body {
   cursor: pointer;
 }
 .contain button:hover {
-  background-color: #0047b3;
+  background-color: #233042;
+}
+
+.equipo {
+  color: #f9580e;
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  color: #fff;
 }
 
 .course .box-container {
@@ -396,30 +514,6 @@ body {
   padding: 1rem 0.4rem;
 }
 
-.footer {
-  text-align: center;
-}
-.footer .icons {
-  padding: 3rem 0;
-}
-.footer .icons a {
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.2rem;
-  text-align: center;
-  border-radius: 50%;
-  color: #d6b10d;
-  border: 0.2rem solid #ffc246;
-  font-size: 2rem;
-  margin: 0 0.1rem;
-  transition: 0.2s linear;
-}
-.footer .icons a:hover {
-  color: #fff;
-  background: #f9580e;
-  border-color: #f9580e;
-}
-
 .about h1 {
   color: #0066ff;
 }
@@ -444,13 +538,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 50px;
+}
+
+.header-txt {
+  text-align: center;
+  font-size: 25px;
 }
 
 .header-img {
-  text-align: center;
-  width: 900px;
-  margin-bottom: 10px;
-  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 70px;
+  width: 100%;
 }
 
 .products {
@@ -461,12 +567,11 @@ body {
   font-size: 30px;
   display: flex;
   justify-content: center;
-  color: #ffffff;
-  margin-bottom: 25px;
+  color: #f9580e;
+  text-transform: capitalize;
 }
 .products img {
-  width: 500px;
-  margin-bottom: 10px;
+  width: 100%;
   border-radius: 10%;
   max-width: 300px;
 }
@@ -489,47 +594,76 @@ body {
   border: 1px solid #f9580e;
   border-radius: 20px;
   color: #ffffff;
+  font-size: 10px;
 }
 .products .btn-2:hover {
   background-color: #f9580e;
 }
 
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+}
+
+/* Estilos para mobile */
+@media (max-width: 552px) {
+  .products {
+    flex-direction: column;
+  }
+  .product {
+    width: 100%;
+  }
+}
 .contact .row {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 3rem 0;
   text-align: center;
 }
 .contact .row .form-container {
   width: 50%;
-  padding-right: 6rem;
 }
 .contact .row .form-container input,
 .contact .row .form-container textarea {
-  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  background: #fff;
-  border-radius: 5rem;
-  padding: 0 1rem;
-  margin: 1rem 0;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 20px;
   color: #f9580e;
   font-size: 1.7rem;
   transition: 0.2s linear;
 }
 .contact .row .form-container input:focus,
 .contact .row .form-container textarea:focus {
-  border: 0.4rem solid #f9580e;
+  border: 0.3rem solid #f9580e;
 }
-.contact .row .form-container textarea {
+.contact .row .form-container ho textarea {
   height: 20rem;
   border-radius: 1rem;
   padding: 1rem;
   resize: none;
 }
 .contact .row .form-container input[type=submit] {
-  height: 5rem;
-  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: #f9580e;
   color: #fff;
   cursor: pointer;
@@ -542,8 +676,19 @@ body {
   border: 0.2rem solid #f9580e;
 }
 
-.container p {
-  color: #fff;
+input[type=reset] {
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background: rgb(51, 50, 50);
+  color: #f9580e;
+  border: 0.2rem solid #f9580e;
+}
+
+.contacto {
+  color: #f9580e;
+  text-align: center;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

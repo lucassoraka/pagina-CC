@@ -1,6 +1,6 @@
 * {
     font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
+
     text-decoration: none;
     outline: none;
     margin: 0;
@@ -8,8 +8,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
     box-sizing: inherit;
+    font-size:70%;
 }
 
 *::selection {
